@@ -22,6 +22,8 @@
 					<div class="hidden lg:flex space-x-8">
 						<a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
 						<a href="#" class="text-gray-700 hover:text-gray-900">About us</a>
+						<a href="#" class="text-gray-700 hover:text-gray-900">Hire</a>
+						<a href="#" class="text-gray-700 hover:text-gray-900">Find Jobs</a>
 						<a href="#testimonial" class="text-gray-700 hover:text-gray-900"
 							>Testimonials</a
 						>
@@ -49,7 +51,7 @@
 		<section class="bg-teal-50 py-8 h-screen flex justify-center items-center">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<h1 class="text-5xl font-bold mb-4">
-					Are you Looking for a<br />Domestic Helper?
+					Post jobs, browse service personnel profiles, and hire with ease.
 				</h1>
 				<p class="text-gray-600 mb-8">
 					Most verified services are available for cooking,<br />cleaning,
@@ -59,12 +61,12 @@
 					<button
 						class="px-4 py-3 bg-teal-600 text-white md:px-8 md:text-md rounded-md hover:bg-teal-700"
 					>
-						Find Worker
+						Hire
 					</button>
 					<button
 						class="px-4 py-3 bg-black text-white md:px-8 md:text-md rounded-md hover:bg-gray-800"
 					>
-						Find Work
+						Find Jobs
 					</button>
 				</div>
 
@@ -72,7 +74,7 @@
 				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
 					<div class="bg-white p-6 rounded-lg shadow-sm">
 						<i class="fas fa-car text-4xl mb-2"></i>
-						<div class="text-2xl font-medium">Car Driver</div>
+						<div class="text-2xl font-medium">Driver</div>
 					</div>
 					<div class="bg-gray-100 p-6 rounded-lg">
 						<i class="fas fa-utensils text-4xl mb-2"></i>
@@ -164,96 +166,211 @@
 					</p>
 				</div>
 
-				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div class="bg-teal-700 p-8 rounded-2xl">
-						<div class="bg-white rounded-xl p-6">
-							<div class="space-y-4">
-								<div class="flex items-center space-x-4 pb-4 border-b">
-									<img
-										src="https://via.placeholder.com/50"
-										alt="Profile"
-										class="w-12 h-12 rounded-full"
-									/>
-									<div class="flex-1">
-										<div class="font-medium">John Smith</div>
-										<div class="flex items-center">
-											<span class="text-yellow-400">★★★★★</span>
+				<!-- Tab Navigation -->
+				<div class="flex justify-center mb-8">
+					<div class="inline-flex rounded-lg border border-gray-200 bg-white p-1">
+						<button
+							id="employers-tab"
+							class="px-6 py-3 rounded-md font-medium transition-all bg-teal-600 text-white"
+							onclick="switchTab('employers')"
+						>
+							For Employers
+						</button>
+						<button
+							id="personnel-tab"
+							class="px-6 py-3 rounded-md font-medium transition-all text-gray-700 hover:text-gray-900"
+							onclick="switchTab('personnel')"
+						>
+							For Service Personnel
+						</button>
+					</div>
+				</div>
+
+				<!-- Tab Content -->
+				<div id="employers-content" class="tab-content">
+					<div class="grid md:grid-cols-2 gap-12 items-center">
+						<div class="bg-teal-700 p-8 rounded-2xl">
+							<div class="bg-white rounded-xl p-6">
+								<div class="space-y-4">
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<img
+											src="https://via.placeholder.com/50"
+											alt="Profile"
+											class="w-12 h-12 rounded-full"
+										/>
+										<div class="flex-1">
+											<div class="font-medium">John Smith</div>
+											<div class="flex items-center">
+												<span class="text-yellow-400">★★★★★</span>
+											</div>
 										</div>
+										<div class="text-teal-600 font-bold">$45</div>
 									</div>
-									<div class="text-teal-600 font-bold">$45</div>
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<img
+											src="https://via.placeholder.com/50"
+											alt="Profile"
+											class="w-12 h-12 rounded-full"
+										/>
+										<div class="flex-1">
+											<div class="font-medium">Sarah Johnson</div>
+											<div class="flex items-center">
+												<span class="text-yellow-400">★★★★★</span>
+											</div>
+										</div>
+										<div class="text-teal-600 font-bold">$42</div>
+									</div>
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<img
+											src="https://via.placeholder.com/50"
+											alt="Profile"
+											class="w-12 h-12 rounded-full"
+										/>
+										<div class="flex-1">
+											<div class="font-medium">Mike Davis</div>
+											<div class="flex items-center">
+												<span class="text-yellow-400">★★★★★</span>
+											</div>
+										</div>
+										<div class="text-teal-600 font-bold">$40</div>
+									</div>
 								</div>
-								<div class="flex items-center space-x-4 pb-4 border-b">
-									<img
-										src="https://via.placeholder.com/50"
-										alt="Profile"
-										class="w-12 h-12 rounded-full"
-									/>
-									<div class="flex-1">
-										<div class="font-medium">Sarah Johnson</div>
-										<div class="flex items-center">
-											<span class="text-yellow-400">★★★★★</span>
-										</div>
-									</div>
-									<div class="text-teal-600 font-bold">$42</div>
+							</div>
+						</div>
+
+						<div class="space-y-6">
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									1
 								</div>
-								<div class="flex items-center space-x-4 pb-4 border-b">
-									<img
-										src="https://via.placeholder.com/50"
-										alt="Profile"
-										class="w-12 h-12 rounded-full"
-									/>
-									<div class="flex-1">
-										<div class="font-medium">Mike Davis</div>
-										<div class="flex items-center">
-											<span class="text-yellow-400">★★★★★</span>
-										</div>
-									</div>
-									<div class="text-teal-600 font-bold">$40</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Post a Job</h4>
+									<p class="text-gray-600">
+										Describe the domestic help you need (nanny, cleaner, driver, gardener, etc.)
+									</p>
+								</div>
+							</div>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									2
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Browse & Connect</h4>
+									<p class="text-gray-600">
+										View verified service profiles and pay to contact multiple candidates.
+									</p>
+								</div>
+							</div>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									3
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Meet & Hire</h4>
+									<p class="text-gray-600">
+										Schedule interviews, hire the best fit, and manage your engagement easily.
+									</p>
+								</div>
+							</div>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									4
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Rate & Review</h4>
+									<p class="text-gray-600">
+										Share feedback to help others and reward great service.
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div id="how-it-works" class="space-y-4">
-						<div
-							class="border border-teal-600 rounded-lg p-4 cursor-pointer hover:border-teal-600 transition-all"
-						>
-							<div class="flex justify-between items-center">
-								<span class="font-medium"
-									>Step 1: Find the right help or post a job</span
-								>
-								<i class="fas fa-chevron-up transition-transform"></i>
+				<div id="personnel-content" class="tab-content hidden">
+					<div class="grid md:grid-cols-2 gap-12 items-center">
+						<div class="bg-black p-8 rounded-2xl">
+							<div class="bg-white rounded-xl p-6">
+								<div class="space-y-4">
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+											<i class="fas fa-briefcase text-teal-600"></i>
+										</div>
+										<div class="flex-1">
+											<div class="font-medium">Chef Position</div>
+											<div class="text-sm text-gray-500">Full-time</div>
+										</div>
+										<div class="text-teal-600 font-bold">$50/hr</div>
+									</div>
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+											<i class="fas fa-home text-pink-600"></i>
+										</div>
+										<div class="flex-1">
+											<div class="font-medium">House Cleaner</div>
+											<div class="text-sm text-gray-500">Part-time</div>
+										</div>
+										<div class="text-teal-600 font-bold">$30/hr</div>
+									</div>
+									<div class="flex items-center space-x-4 pb-4 border-b">
+										<div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+											<i class="fas fa-car text-amber-600"></i>
+										</div>
+										<div class="flex-1">
+											<div class="font-medium">Driver Needed</div>
+											<div class="text-sm text-gray-500">Full-time</div>
+										</div>
+										<div class="text-teal-600 font-bold">$40/hr</div>
+									</div>
+								</div>
 							</div>
-							<p class="text-gray-600 text-sm mt-2">
-								Browse profiles or post your requirements to find the perfect
-								match
-							</p>
 						</div>
-						<div
-							class="border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-teal-600 transition-all"
-						>
-							<div class="flex justify-between items-center">
-								<span class="font-medium">Step 2: Schedule a meeting date</span>
-								<i class="fas fa-chevron-down transition-transform"></i>
+
+						<div class="space-y-6">
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									1
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Create Your Profile</h4>
+									<p class="text-gray-600">
+										Add your job preferences, skills, and experience.
+									</p>
+								</div>
 							</div>
-							<p class="text-gray-600 text-sm mt-2 hidden">
-								Select a convenient date and time to meet with your chosen
-								service provider
-							</p>
-						</div>
-						<div
-							class="border border-gray-200 rounded-lg p-4 cursor-pointer hover:border-teal-600 transition-all"
-						>
-							<div class="flex justify-between items-center">
-								<span class="font-medium"
-									>Step 3: Select to Rate them per Services</span
-								>
-								<i class="fas fa-chevron-down transition-transform"></i>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									2
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Find Jobs</h4>
+									<p class="text-gray-600">
+										Get matched with nearby opportunities that suit your skills.
+									</p>
+								</div>
 							</div>
-							<p class="text-gray-600 text-sm mt-2 hidden">
-								After service completion, rate your experience to help others
-								make informed decisions
-							</p>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									3
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Connect & Get Hired</h4>
+									<p class="text-gray-600">
+										Receive alerts when customers show interest and secure your next job.
+									</p>
+								</div>
+							</div>
+							<div class="flex items-start space-x-4">
+								<div class="flex-shrink-0 w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold">
+									4
+								</div>
+								<div>
+									<h4 class="font-bold text-lg mb-2">Grow Your Profile</h4>
+									<p class="text-gray-600">
+										Earn ratings and build your reputation for more opportunities.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -582,6 +699,37 @@
 		</footer> -->
 
 		<script>
+			// Tab switching function for How It Works section
+			function switchTab(tabName) {
+				// Get all tab contents and buttons
+				const employersContent = document.getElementById('employers-content');
+				const personnelContent = document.getElementById('personnel-content');
+				const employersTab = document.getElementById('employers-tab');
+				const personnelTab = document.getElementById('personnel-tab');
+
+				if (tabName === 'employers') {
+					// Show employers content, hide personnel content
+					employersContent.classList.remove('hidden');
+					personnelContent.classList.add('hidden');
+					
+					// Update button styles
+					employersTab.classList.add('bg-teal-600', 'text-white');
+					employersTab.classList.remove('text-gray-700', 'hover:text-gray-900');
+					personnelTab.classList.remove('bg-teal-600', 'text-white');
+					personnelTab.classList.add('text-gray-700', 'hover:text-gray-900');
+				} else {
+					// Show personnel content, hide employers content
+					personnelContent.classList.remove('hidden');
+					employersContent.classList.add('hidden');
+					
+					// Update button styles
+					personnelTab.classList.add('bg-teal-600', 'text-white');
+					personnelTab.classList.remove('text-gray-700', 'hover:text-gray-900');
+					employersTab.classList.remove('bg-teal-600', 'text-white');
+					employersTab.classList.add('text-gray-700', 'hover:text-gray-900');
+				}
+			}
+
 			// Mobile Menu Toggle
 			const mobileMenuBtn = document.createElement("button");
 			mobileMenuBtn.className = "md:hidden text-2xl";
@@ -629,53 +777,6 @@
 							icon.classList.add("fa-plus");
 							icon.classList.remove("text-gray-400");
 							icon.classList.add("text-teal-600");
-						}
-					}
-				});
-			});
-
-			// How It Works Accordion
-			const howItWorksButtons = document.querySelectorAll(
-				"#how-it-works .border",
-			);
-
-			howItWorksButtons.forEach((item, index) => {
-				const button = item.querySelector(".flex");
-				button.addEventListener("click", function () {
-					const content = item.querySelector("p");
-					const icon = item.querySelector("i.fa-chevron-up, i.fa-chevron-down");
-
-					// Close all other items
-					howItWorksButtons.forEach((otherItem, otherIndex) => {
-						if (otherIndex !== index) {
-							const otherContent = otherItem.querySelector("p");
-							const otherIcon = otherItem.querySelector(
-								"i.fa-chevron-up, i.fa-chevron-down",
-							);
-							if (otherContent && !otherContent.classList.contains("hidden")) {
-								otherContent.classList.add("hidden");
-								otherIcon.classList.remove("fa-chevron-up");
-								otherIcon.classList.add("fa-chevron-down");
-								otherItem.classList.remove("border-teal-600");
-								otherItem.classList.add("border-gray-200");
-							}
-						}
-					});
-
-					// Toggle current item
-					if (content) {
-						if (content.classList.contains("hidden")) {
-							content.classList.remove("hidden");
-							icon.classList.remove("fa-chevron-down");
-							icon.classList.add("fa-chevron-up");
-							item.classList.remove("border-gray-200");
-							item.classList.add("border-teal-600");
-						} else {
-							content.classList.add("hidden");
-							icon.classList.remove("fa-chevron-up");
-							icon.classList.add("fa-chevron-down");
-							item.classList.remove("border-teal-600");
-							item.classList.add("border-gray-200");
 						}
 					}
 				});
@@ -741,16 +842,6 @@
 				firstFaqContent.classList.add("block");
 				firstFaqIcon.classList.remove("fa-plus", "text-teal-600");
 				firstFaqIcon.classList.add("fa-times", "text-gray-400");
-			}
-
-			// Initialize first How It Works item as open
-			const firstHowItWorksContent = howItWorksButtons[0].querySelector("p");
-			const firstHowItWorksIcon = howItWorksButtons[0].querySelector("i");
-			if (
-				firstHowItWorksContent &&
-				firstHowItWorksContent.classList.contains("hidden")
-			) {
-				// Keep it open as designed
 			}
 
 			// Add scroll animation for sections
