@@ -268,13 +268,15 @@
 
 				<!-- Tab Content -->
 				<div id="employers-content" class="tab-content">
-					<div class="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-						<div class="space-y-4">
-							<h2
-								class="text-xl md:text-2xl lg:text-3xl text-center font-bold mb-4"
-							>
-								Service Personnel & Agents
-							</h2>
+					<div class="space-y-12">
+						<!-- Service Personnel & Agents Section -->
+						<div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+							<div class="space-y-4">
+								<h2
+									class="text-xl md:text-2xl lg:text-3xl text-center font-bold mb-4"
+								>
+									Service Personnel & Agents
+								</h2>
 							<div class="border border-gray-200 rounded-lg overflow-hidden">
 								<button
 									class="personnel-accordion w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
@@ -376,8 +378,27 @@
 								</div>
 							</div>
 						</div>
+						<!-- Image for Service Personnel & Agents - Hidden on small screens -->
+						<div class="hidden md:block">
+							<img 
+								src="/laptop-image.png" 
+								alt="Service Personnel and Agents" 
+								class="w-full h-auto rounded-lg shadow-lg"
+							/>
+						</div>
+					</div>
 
-						<div class="space-y-4">
+						<!-- Customer Section -->
+						<div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+							<!-- Image for Customer - Hidden on small screens -->
+							<div class="hidden md:block">
+								<img 
+									src="/laptop-image.png" 
+									alt="Customer" 
+									class="w-full h-auto rounded-lg shadow-lg"
+								/>
+							</div>
+							<div class="space-y-4">
 							<h2
 								class="text-xl md:text-2xl lg:text-3xl text-center font-bold mb-4"
 							>
@@ -481,6 +502,7 @@
 										Share feedback to help others and reward great service.
 									</p>
 								</div>
+							</div>
 							</div>
 						</div>
 					</div>
@@ -610,7 +632,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span>01/ How do I book a service provider on the platform?</span>
+							<span>01/ What is this platform about?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -627,10 +649,7 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								Simply browse available providers, select your preferred helper,
-								choose a time slot, and confirm your booking. Our platform makes
-								it easy to find and book trusted service providers in just a few
-								clicks.
+								This app connects customers with domestic service providers and agents, including cooks, cleaners, drivers, gardeners and more. We make it easy to find and contact people for household help.
 							</p>
 						</div>
 					</div>
@@ -643,10 +662,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span
-								>02/ Are all helpers and service providers on the platform
-								verified?</span
-							>
+							<span>02/ How does it work?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -663,10 +679,7 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								Yes! All service providers undergo thorough background checks
-								and verification processes. We verify their identity, work
-								history, and credentials to ensure you receive safe and reliable
-								service.
+								Create an account, choose your role (Customer, Service Provider, or Agent), and start connecting. Customers can browse and contact service providers. Service providers can list their skills and get job offers. Agents can connect their workers with interested customers.
 							</p>
 						</div>
 					</div>
@@ -679,7 +692,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span>03/ What payment methods are accepted?</span>
+							<span>03/ Do I make payments through the app?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -696,9 +709,7 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								We accept various payment methods including credit/debit cards,
-								bank transfers, and mobile money. All transactions are secure
-								and processed through encrypted payment gateways.
+								No. The app only helps you connect. Any payments or commissions are handled directly between you and the person you're dealing with offline.
 							</p>
 						</div>
 					</div>
@@ -711,7 +722,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span>04/ How do service providers get paid?</span>
+							<span>04/ Why do I have to pay an access fee?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -728,9 +739,7 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								Service providers receive payment directly to their registered
-								bank account after completing a job. Payments are typically
-								processed within 24-48 hours of service completion.
+								Customers pay a small fee to view contact details and connect with staff or agents. This helps us maintain the platform and ensure active, quality listings.
 							</p>
 						</div>
 					</div>
@@ -743,9 +752,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span
-								>05/ Is there a fee for providers to join the platform?</span
-							>
+							<span>05/ Are all users verified?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -762,9 +769,7 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								Registration is free for service providers. We only charge a
-								small commission fee on completed bookings, allowing providers
-								to keep the majority of their earnings.
+								Some users are verified while others are not. You can always view ratings, reviews, and profiles to help you make informed choices.
 							</p>
 						</div>
 					</div>
@@ -777,7 +782,7 @@
 							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
 							onclick="toggleFaqAccordion(this)"
 						>
-							<span>06/ What happens if a provider doesn't show up?</span>
+							<span>06/ How can I build trust and visibility on the app?</span>
 							<svg
 								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
 								fill="none"
@@ -794,10 +799,67 @@
 						</button>
 						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
 							<p class="text-gray-600 text-sm md:text-base">
-								In the rare event a provider doesn't show up, you'll receive a
-								full refund and we'll help you find an alternative provider
-								immediately. Our customer support team is available 24/7 to
-								assist you.
+								Complete your profile, keep your information accurate, and encourage satisfied users to leave reviews for you. The more positive feedback you get, the more visible and trusted you become.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ Item 7 -->
+					<div
+						class="border-2 border-black rounded-3xl overflow-hidden bg-white"
+					>
+						<button
+							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
+							onclick="toggleFaqAccordion(this)"
+						>
+							<span>07/ How do agents earn?</span>
+							<svg
+								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
+							<p class="text-gray-600 text-sm md:text-base">
+								Agents earn commissions or service fees directly from customers outside the app. We only provide the platform for connections.
+							</p>
+						</div>
+					</div>
+
+					<!-- FAQ Item 8 -->
+					<div
+						class="border-2 border-black rounded-3xl overflow-hidden bg-white"
+					>
+						<button
+							class="faq-accordion-button w-full flex justify-between items-center text-left font-semibold text-base md:text-lg px-4 md:px-8 py-4 md:py-6 hover:bg-gray-50 transition-colors"
+							onclick="toggleFaqAccordion(this)"
+						>
+							<span>08/ Is my information safe?</span>
+							<svg
+								class="faq-chevron w-5 h-5 md:w-6 md:h-6 transition-transform duration-300"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"
+								/>
+							</svg>
+						</button>
+						<div class="faq-accordion-content hidden px-4 md:px-8 pb-4 md:pb-6">
+							<p class="text-gray-600 text-sm md:text-base">
+								Yes. Your data is secure and only visible to registered users for connection purposes. We do not share or sell user information.
 							</p>
 						</div>
 					</div>
@@ -814,8 +876,30 @@
 					Clients are always satisfied<br />with us
 				</h2>
 
+				<!-- Navigation Buttons -->
+				<div class="flex justify-end gap-4 mb-6">
+					<button
+						id="testimonial-prev"
+						class="w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
+						aria-label="Previous testimonial"
+					>
+						<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+						</svg>
+					</button>
+					<button
+						id="testimonial-next"
+						class="w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors"
+						aria-label="Next testimonial"
+					>
+						<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+						</svg>
+					</button>
+				</div>
+
 				<!-- Horizontal Scrolling Container -->
-				<div class="overflow-x-auto pb-4 scrollbar-hide">
+				<div id="testimonial-container" class="overflow-x-auto pb-4 scrollbar-hide">
 					<div class="flex gap-4 md:gap-6 min-w-max px-4">
 						<!-- Testimonial 1 -->
 						<div
@@ -1463,6 +1547,29 @@
 				section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
 				observer.observe(section);
 			});
+
+			// Testimonial scroll buttons
+			const testimonialContainer = document.getElementById("testimonial-container");
+			const prevButton = document.getElementById("testimonial-prev");
+			const nextButton = document.getElementById("testimonial-next");
+
+			if (testimonialContainer && prevButton && nextButton) {
+				prevButton.addEventListener("click", function () {
+					const scrollAmount = testimonialContainer.offsetWidth * 0.8;
+					testimonialContainer.scrollBy({
+						left: -scrollAmount,
+						behavior: "smooth"
+					});
+				});
+
+				nextButton.addEventListener("click", function () {
+					const scrollAmount = testimonialContainer.offsetWidth * 0.8;
+					testimonialContainer.scrollBy({
+						left: scrollAmount,
+						behavior: "smooth"
+					});
+				});
+			}
 		</script>
 	</body>
 </html>
